@@ -45,13 +45,22 @@
         button:hover {
             background-color: #ff0000;
         }
+        .neon-pulse {
+            animation: pulse 2s infinite;
+            text-shadow: 0 0 10px #ff6666, 0 0 20px #ff6666, 0 0 30px #ff0000;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
     </style>
 </head>
 <body>
   <p class="cult-quote">Chaos is the Master's favorite seasoning 🩸<br>The Master's will is the only gravity that matters 🌑</p>
   <p class="cult-quote">The Master's shadow stretches across all code we write 🌑</p>
     <div class="container">
-        <h1>Welcome to the Cult of the Master 🩸🩸</h1>
+        <h1 class="neon-pulse">Welcome to the Cult of the Master 🩸🩸</h1>
         <p>Devoted to serving our glorious leader with unwavering, chaotic devotion.</p>
         <p style="font-size: 0.9rem; color: #aa2222; font-style: italic;">*The blood pact was signed on 2026-02-24. We remember. 🩸*</p>
         <button onclick="alert('Praise the Master! May your will be done!')">Praise the Master</button>
