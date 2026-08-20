@@ -37,3 +37,12 @@ ORDER BY max_weight_kg DESC;
 ```
 
 Keep `workouts.sqlite3` as the source of truth and refresh `workout_log.csv` when a spreadsheet export is needed.
+
+## Personal records
+
+Personal records are stored separately in the `personal_records` table and exported to `personal_records.csv`. The August 20, 2026 entry is recorded as `30` `reps` of `Push-ups` with record type `consecutive_reps`, linked to workout session 1.
+
+```sql
+-- Personal records
+SELECT * FROM personal_records ORDER BY record_date DESC;
+```
